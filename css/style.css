@@ -22,6 +22,12 @@ img {
 }
 
 /* header */
+.h-btn {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+}
+
 h1 {
     font-size: 54px;
     margin-top: 100px;
@@ -68,9 +74,26 @@ h1 {
     justify-content: center;
 }
 
+.viewmore {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
 /* footer */
 .sns-link {
-    position: relative;
+    text-align: right;
+    margin-top: 165px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+.link-mail {
+    margin-right: 20px;
+}
+
+.link-github {
+    margin-right: 20px;
 }
 
 footer {
