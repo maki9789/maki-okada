@@ -22,15 +22,12 @@ img {
 }
 
 /* header */
-<<<<<<< HEAD
 .h-btn {
     position: fixed;
     top: 30px;
     right: 30px;
 }
 
-=======
->>>>>>> 81ea669 (下層ページの作成)
 h1 {
     font-size: 54px;
     margin-top: 100px;
@@ -44,23 +41,12 @@ h1 {
     margin-bottom: 100px;
 }
 
-<<<<<<< HEAD
 /* hamberger */
 .hamberger {
     display: flex;
     list-style: none;
 }
 
-=======
-/* hamburger */
-.h-btn {
-    position: fixed;
-    top: 30px;
-    right: 30px;
-}
-
-
->>>>>>> 81ea669 (下層ページの作成)
 /* content */
 .content-top {
 	text-align: center;
@@ -100,11 +86,7 @@ h1 {
     margin-top: 165px;
     margin-right: 30px;
     margin-bottom: 50px;
-<<<<<<< HEAD
 }
-=======
-} 
->>>>>>> 81ea669 (下層ページの作成)
 
 .link-mail {
     margin-right: 20px;
