@@ -22,36 +22,24 @@ img {
 }
 
 /* header */
-<<<<<<< HEAD
-.h-btn {
-    position: fixed;
-    top: 30px;
-    right: 30px;
-}
-
-=======
->>>>>>> 81ea669 (下層ページの作成)
 h1 {
-    font-size: 54px;
-    margin-top: 100px;
-    text-align: center;
-}
-
-.introduction {
-    font-size: 20px;
-    text-align: center;
+    font-size: 36px;
     margin-top: 50px;
-    margin-bottom: 100px;
+    text-align: center;
 }
 
-<<<<<<< HEAD
-/* hamberger */
-.hamberger {
-    display: flex;
-    list-style: none;
+.works-p {
+    text-align: center;
 }
 
-=======
+.works-c {
+    font-size: 24px;
+    margin-top: 100px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 30px;
+    display :inline-block;
+}
+
 /* hamburger */
 .h-btn {
     position: fixed;
@@ -59,39 +47,52 @@ h1 {
     right: 30px;
 }
 
-
->>>>>>> 81ea669 (下層ページの作成)
 /* content */
-.content-top {
-	text-align: center;
-}
-
-.content-top ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.content-bottom {
-	text-align: center;
-}
-
-.content-bottom ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.viewmore {
+.main-visual {
     text-align: center;
-    font-size: 20px;
+    margin-top: 100px;
+}
+
+.circle-p {
+    text-align: center;
     margin-top: 50px;
+}
+
+.circle-1 {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #474343;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.circle-2 {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #b1b1b1;
+    border-radius: 50%;
+}
+
+h2 {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.outline {
+    font-size: 16px;
+    margin-top: 50px;
+    margin-left: 360px;
+    line-height: 200%;
+}
+
+.tools {
+    font-size: 16px;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 200%;
 }
 
 /* footer */
@@ -100,11 +101,7 @@ h1 {
     margin-top: 165px;
     margin-right: 30px;
     margin-bottom: 50px;
-<<<<<<< HEAD
-}
-=======
 } 
->>>>>>> 81ea669 (下層ページの作成)
 
 .link-mail {
     margin-right: 20px;
