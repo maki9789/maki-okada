@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>MAKI OKADA PORTFOLIO SITE</title>
         <meta name="discription" content="MAKI OKADAのポートフォリオサイト">
+        <link rel="icon" type="" href="">
 
         <!-- CSS -->
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
@@ -11,40 +12,49 @@
     </head>
 
     <body>
-        <!-- header -->
-        <header>
-            <a href="#"><img src="images/icon-hamburger-btn.png" class="h-btn"></a>
-            <h1>MAKI OKADA</h1>
-            <p class="introduction">制作実績やプロフィール、スキルを掲載しています。</p>
-        </header>
+        <div class="container">
+            <!-- header -->
+            <header>
+                <a href="#"><img src="images/icon-hamburger-btn.png" class="h-btn"></a>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="#">TOP</a></li>
+                        <li><a href="#">WORKS</a></li>
+                        <li><a href="#">PROFILE</a></li>
+                    </ul>
+                </nav>
+                <h1>MAKI OKADA</h1>
+                <p class="introduction">制作実績やプロフィール、スキルを掲載しています。</p>
+            </header>
 
-        <!-- content -->
-        <div class="content-top">
-            <ul class="preview">
-                <li class="top-portfolio"><a href="#"><img src="images/top-portfolio.jpg" alt="MY PORTFOLIO SITE"></a></li>
-                <li class="top-narcissus"><a href="#"><img src="images/top-narcissus.jpg" alt="ESTHESALON NARCISSUS"></a></li>
-                <li class="top-hyosaki"><a href="#"><img src="images/top-hyosaki.jpg" alt="HYOSAKI"></a></li>
-            </ul>
-        </div>
-        <div class="content-bottom">
-            <ul class="preview">
-                <li class="top-namecard"><a href="#"><img src="images/top-namecard.jpg" alt="NAMECARD"></a></li>
-                <li class="top-banner"><a href="#"><img src="images/top-banner.jpg" alt="BANNER COLLECTION"></a></li>
-                <li class="top-mapping"><a href="#"><img src="images/top-mapping.jpg" alt="MAPPING"></a></li>
-            </ul>
-            <p class="viewmore"><a href="#">VIEW MORE</a></p>
-        </div>
+            <!-- content -->
+            <div class="content-top">
+                <ul class="preview">
+                    <li class="top-portfolio"><a href="works-portfolio.html"><img src="images/top-portfolio.jpg" onmouseover="this.src='images/top-portfolio2.jpg'" onmouseout="this.src='images/top-portfolio.jpg'" alt="MY PORTFOLIO SITE"></a></li>
+                    <li class="top-narcissus"><a href="works-narcissus.html"><img src="images/top-narcissus.jpg" onmouseover="this.src='images/top-narcissus2.jpg'" onmouseout="this.src='images/top-narcissus.jpg'"alt="ESTHESALON NARCISSUS"></a></li>
+                    <li class="top-hyosaki"><a href="works-hyosaki.html"><img src="images/top-hyosaki.jpg" alt="HYOSAKI"></a></li>
+                </ul>
+            </div>
+            <div class="content-bottom">
+                <ul class="preview">
+                    <li class="top-namecard"><a href="works-namecard.html"><img src="images/top-namecard.jpg" alt="NAMECARD"></a></li>
+                    <li class="top-banner"><a href="works-banner.html"><img src="images/top-banner.jpg" alt="BANNER COLLECTION"></a></li>
+                    <li class="top-mapping"><a href="works-mapping.html"><img src="images/top-mapping.jpg" alt="MAPPING"></a></li>
+                </ul>
+                <p class="viewmore"><a href="#">VIEW MORE</a></p>
+            </div>
 
-        <!-- footer -->
-        <footer>
-            <div class="sns-link">
-                <a href="#"><img src="images/icon-mail.png" class="link-mail"></a>
-                <a href="#"><img src="images/icon-github.png" class="link-github"></a>
-                <a href="#"><img src="images/icon-twitter.png" class="link-twitter"></a>
-            </div>
-            <div class="footer-bg">
-                <p class="copyright">&copy; MAKI OKADA</p>
-            </div>
-        </footer>
+            <!-- footer -->
+            <footer>
+                <div class="sns-link">
+                    <a href="#"><img src="images/icon-mail.png" class="link-mail"></a>
+                    <a href="#"><img src="images/icon-github.png" class="link-github"></a>
+                    <a href="#"><img src="images/icon-twitter.png" class="link-twitter"></a>
+                </div>
+                <div class="footer-bg">
+                    <p class="copyright">&copy; MAKI OKADA</p>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>

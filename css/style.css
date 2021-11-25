@@ -21,11 +21,24 @@ img {
     vertical-align: bottom;
 }
 
+.container {
+    min-height: 100vh; 
+    position: relative;
+    padding-bottom: 200px; 
+    box-sizing: border-box;;
+}
+
 /* hamburger */
 .h-btn {
     position: fixed;
     top: 30px;
     right: 30px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #303030;
+    font-size: 20px;
 }
 
 /* header */
@@ -43,11 +56,12 @@ h1 {
 }
 
 /* footer */
-/* footer {
+footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-} */
+}
+
 
 .footer-bg {
     background-color: #000;
@@ -57,7 +71,6 @@ h1 {
 
 .sns-link {
     text-align: right;
-    margin-top: 165px;
     margin-right: 30px;
     margin-bottom: 50px;
 } 
