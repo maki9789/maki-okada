@@ -1,2 +1,39 @@
 @charset "UTF=8";
+.content {
+    font-size: 16px;
+} 
+
+.profile-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.my-pic {
+    margin-right: 80px;
+}
+
+.skill {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.skill-icon {
+    display: flex;
+}
+
+.skill-icon img {
+    margin-right: 30px;
+    
+}
+
+table {
+    margin: 80px auto;
+}
+
+td, th {
+    padding: 25px 30px;
+}
 
