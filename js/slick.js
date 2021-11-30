@@ -1,7 +1,8 @@
+// works詳細ページのメイン画像
 $(function () {
     $(".main-visual").slick({
         autoplay: true,
-        autoplaySpeed: 500,
+        autoplaySpeed: 1000,
         dots: true,
         infinite: true,
         speed: 1000,
@@ -9,4 +10,4 @@ $(function () {
         centerMode: true,
         variableWidth: true
     });
-});
+}); 

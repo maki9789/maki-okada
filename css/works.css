@@ -1,5 +1,5 @@
 @charset "UTF=8";
-
+/* title  */
 .works {
     font-size: 48px;
     margin-top: 100px;
@@ -29,6 +29,8 @@ h2 {
 .main-visual {
     text-align: center;
     margin-top: 100px;
+    /* box-sizing: border-box;
+    width: 100%; */
 }
 
 h3 {
@@ -39,8 +41,7 @@ h3 {
 
 .outline {
     font-size: 16px;
-    margin-top: 50px;
-    margin-left: 360px;
+    margin: 5% 25%;
     line-height: 200%;
 }
 
@@ -49,38 +50,6 @@ h3 {
     margin-top: 50px;
     text-align: center;
     line-height: 200%;
-}
-
-/* 画像 */
-.circle-p {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.circle-b {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: #474343;
-    border-radius: 50%;
-    margin-right: 50px;
-}
-
-.circle {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: #b1b1b1;
-    border-radius: 50%;
-    margin-right: 50px;
-}
-
-.circle-l {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: #b1b1b1;
-    border-radius: 50%;
 }
 
 /* banner */
@@ -92,128 +61,95 @@ h3 {
     gap: 50px;
 }
 
-/* .circle-p {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.circle-1 {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: #474343;
-    border-radius: 50%;
-    margin-right: 50px;
-}
-
-.circle-2 {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: #b1b1b1;
-    border-radius: 50%;
-    margin-right: 50px;
-}
-
-.circle-3 {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: #b1b1b1;
-    border-radius: 50%;
-    margin-right: 50px;
-}
-
-.circle-4 {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: #b1b1b1;
-    border-radius: 50%;
-    margin-right: 50px;
-}
-
-.circle-5 {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: #b1b1b1;
-    border-radius: 50%;
-} */
-
 .sliderArea {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 25px;
-  }
-  .sliderArea.w300 {
+}
+
+.sliderArea.w300 {
     max-width: 300px;
-  }
-  .slick-slide {
+}
+
+.slick-slide {
     margin: 0 5px;
-  }
-  .slick-slide img {
+}
+
+.slick-slide img {
     width: 100%;
     height: auto;
-  }
-  .slick-prev, .slick-next {
+}
+
+.slick-prev, .slick-next {
     z-index: 1;
-  }
-  .slick-prev:before, .slick-next:before {
+}
+
+.slick-prev:before, .slick-next:before {
     color: #000;
-  }
-  .slick-slide {
+}
+
+.slick-slide {
     transition: all ease-in-out .3s;
     opacity: .2;
-  }
-  .slick-active {
+}
+
+.slick-active {
     opacity: 1;
-  }
-  .slick-current {
+}
+
+.slick-current {
     opacity: 1;
-  }
-  .thumb {
+}
+
+.thumb {
     margin: 20px 0 0;
-  }
-  .thumb .slick-slide {
+}
+
+.thumb .slick-slide {
     cursor: pointer;
-  }
-  .thumb .slick-slide:hover {
+}
+
+.thumb .slick-slide:hover {
     opacity: .7;
-  }
-  
-  /*====================================================================
-  以下は不要です。
-  ====================================================================*/
-  body {
+}
+
+/*====================================================================
+以下は不要です。
+===================================================================*/
+body {
     font-family: YuGothic, "游ゴシック体", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     font-size: 16px;
     letter-spacing: .025em;
     line-height: 1.8;
     margin: 0;
-  }
-  @media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 1024px) {
     body {
-      font-size: 14px;
+    font-size: 14px;
     }
-  }
-  .section {
+}
+
+.section {
     max-width: 300px;
     margin: 0 auto;
     padding: 30px 0;
-  }
-  .section p._a {
+}
+
+.section p._a {
     font-size: 12px;
     font-weight: bold;
     margin: 30px 0 0;
-  }
-  .section p._a .link {
+}
+
+.section p._a .link {
     display: inline-block;
     color: #607D8B;
     padding-left: 1.3em;
     text-indent: -1.3em;
-  }
-  .section p._a .link:before {
+}
+
+.section p._a .link:before {
     content: '';
     display: inline-block;
     width: 5px;
@@ -223,4 +159,4 @@ h3 {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     margin-right: 10px;
-  }
+} 

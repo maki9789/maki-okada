@@ -4,18 +4,28 @@
         <meta charset="utf-8">
         <title>MAKI OKADA PORTFOLIO SITE</title>
         <meta name="discription" content="MAKI OKADAのポートフォリオサイト">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
 
         <!-- CSS -->
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
         <link rel="stylesheet" href="css/modules.css">
 
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="images/favicon.png">
     </head>
 
     <body>
         <div class="container">
             <!-- header -->
             <header>
-                <a href="#"><img src="images/icon-hamburger-btn.png" class="h-btn"></a>
+                <p class="h-btn"><img src="images/icon-hamburger-btn.png"></p>
+                <nav>
+                    <ul class="navigation">
+                        <li class="nav-li"><a href="index.html">TOP</a></li>
+                        <li class="nav-li"><a href="works.html">WORKS</a></li>
+                        <li class="nav-li"><a href="profile.html">PROFILE</a></li>
+                    </ul>
+                </nav>
                 <div class="works-p">
                     <p class="works-c">WORKS</p>
                 </div>
@@ -24,19 +34,11 @@
 
             <!-- content -->
             <div class="main-visual">
-                <div><img src="images/works-hyosaki1.jpg" width="400" height="300"></div>
-                <div><img src="images/works-hyosaki2.jpg" width="400" height="300"></div>
-                <div><img src="images/works-hyosaki3.jpg" width="400" height="300"></div>
-                <div><img src="images/works-hyosaki4.jpg" width="400" height="300"></div>
+                <div><img src="images/works-hyosaki1.jpg"></div>
+                <div><img src="images/works-hyosaki2.jpg"></div>
+                <div><img src="images/works-hyosaki3.jpg"></div>
+                <div><img src="images/works-hyosaki4.jpg"></div>
             </div>
-            <!-- <div class="circle-p">
-                <ul>
-                    <li class="circle-b"></li>
-                    <li class="circle"></li>
-                    <li class="circle"></li>
-                    <li class="circle-l"></li>
-                </ul>
-            </div> -->
             <div class="text">
                 <h3>概要</h3>
                 <p class="outline">
@@ -74,6 +76,7 @@
                 </div>
             </footer>
         </div>
+        <!-- JS -->
         <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" src="js/slick.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>

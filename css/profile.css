@@ -9,9 +9,15 @@
     justify-content: center;
     margin-top: 100px;
 }
+.my-name {
+    font-size: 16px;
+    text-align: left;
+    margin: 0 ;
+}
 
 .my-pic {
     margin-right: 80px;
+    margin-top: 50px;
 }
 
 .skill {
@@ -22,6 +28,7 @@
 
 .skill-icon {
     display: flex;
+    align-items: flex-start;
 }
 
 .skill-icon img {
@@ -36,4 +43,3 @@ table {
 td, th {
     padding: 25px 30px;
 }
-
