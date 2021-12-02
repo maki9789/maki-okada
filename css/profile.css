@@ -20,26 +20,58 @@
     margin-top: 50px;
 }
 
-.skill {
+.heading {
     font-size: 24px;
     text-align: center;
     margin-top: 100px;
 }
 
-.skill-icon {
+.skill {
+    position: relative;
+    height: 500px;
+}
+
+.skill-ps, 
+.skill-ai,
+.skill-xd,
+.skill-coding {
+    position: absolute;
     display: flex;
     align-items: flex-start;
+    gap: 30px;
+}
+
+.skill-ps {
+    top: 70px;
+    left: 100px;
+}
+
+.skill-ai {
+    top: 70px;
+    left: 650px;
+}
+
+.skill-xd {
+    top: 300px;
+    left: 100px;
+}
+
+.skill-coding {
+    top: 300px;
+    left: 650px;
 }
 
 .skill-icon img {
     margin-right: 30px;
-    
 }
 
-table {
-    margin: 80px auto;
+.strengths-detail,
+.reasons {
+    margin: 70px 20% 0;
 }
 
-td, th {
-    padding: 25px 30px;
+.greeting {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
 }
