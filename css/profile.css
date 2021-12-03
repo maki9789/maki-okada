@@ -28,7 +28,9 @@
 
 .skill {
     position: relative;
-    height: 500px;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .skill-ps, 
@@ -63,6 +65,10 @@
 
 .skill-icon img {
     margin-right: 30px;
+}
+
+.detail {
+    font-size: 14px;
 }
 
 .strengths-detail,
