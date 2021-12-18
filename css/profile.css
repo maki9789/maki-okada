@@ -106,6 +106,7 @@
 
     .skill {
         position: static;
+        height: auto;
     }
     
     .skill-ps,
@@ -121,6 +122,11 @@
     .skill-ai img,
     .skill-xd img,
     .skill-coding img {
+        display: block;
         margin: 0 auto;
+    }
+
+    footer {
+        position: static;
     }
 }
