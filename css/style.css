@@ -8,7 +8,7 @@ html {
 body {
     font-family: "游ゴシック", "Yu Gothic" "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
     line-height: 1.7;
-    color: #303030;
+    color: #505050;
     background-color: #fff;
 }
 
@@ -17,7 +17,7 @@ a {
 }
 
 a:link, a:visited, a:hover, a:active {
-    color:#303030;
+    color:#505050;
 }
 
 img {
@@ -27,8 +27,6 @@ img {
 
 .container {
     min-height: 100vh; 
-    position: relative;
-    /* padding-bottom: 200px;  */
     box-sizing: border-box;;
 }
 
@@ -37,12 +35,12 @@ img {
     position: fixed;
     top: 30px;
     right: 30px;
-    color: #303030;
+    color: #505050;
 }
 
 .navigation {
     text-decoration: none;
-    color: #303030;
+    color: #505050;
     font-size: 20px;
     list-style: none;
 }
@@ -51,7 +49,7 @@ nav {
     position: fixed;
     right: 30px;
     top: 90px;
-    color: #303030;
+    color: #505050;
 }
 
 .nav-li {
@@ -85,13 +83,13 @@ opacity: 0;
 
 /* header */
 h1 {
-    font-size: 54px;
+    font-size: 48px;
     margin-top: 100px;
     text-align: center;
 }
 
 .introduction {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 100px;
@@ -99,8 +97,6 @@ h1 {
 
 /* footer */
 footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
@@ -138,8 +134,8 @@ footer {
 	text-align: center;
 }
 
-.content-top ul,
-.content-bottom ul {
+.content-top,
+.content-bottom {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -148,8 +144,88 @@ footer {
     justify-content: center;
 }
 
-.content-bottom {
+/* animation */
+
+.left,
+.center,
+.right { 
+	width: 455px;
+    height: auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.left .caption,
+.center .caption,
+.right .caption {
+	width: 100%;
+	height:	100%;
+	visibility:	hidden;	/*文字を表示しない*/
+	font-size: 120%;
+	position: absolute;
+	top: 0;
+	left: 0;
 	text-align: center;
+	-webkit-transition:	all 0.4s step-end;
+	transition:	all 0.4s step-end;
+}
+
+.left:hover .caption,
+.center:hover .caption,
+.right:hover .caption {
+	visibility:	visible;	/* 文字を表示する */
+}
+
+.left .caption p,
+.center .caption p,
+.right .caption p {
+	font-size: 130%;
+    margin-top: 30%;
+	color: #606060;
+    font-weight: bold;
+	opacity: 0;	/* ホバーが解除された時すぐ消えるように、文字を表示しない */
+}
+
+.left:hover .caption p,
+.center:hover .caption p,
+.right:hover .caption p {
+	opacity: 1;	/* 文字を表示する */
+}
+
+.left .mask1, .left .mask2,
+.center .mask1, .center .mask2,
+.right .mask1, .right .mask2 {
+	width: 50%;	/* 幅は半部のサイズ */
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background-color:rgba(255,255,255,0.4);
+	-webkit-transition:	all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.left .mask1,
+.center .mask1,
+.right .mask1 {
+	left: -50%;	/* 枠の左に置いて表示させない */
+}
+
+.left:hover .mask1,
+.center:hover .mask1,
+.right:hover .mask1 {
+	left: 0px;	/* 左にずらして表示する */
+}
+
+.left .mask2,
+.center .mask2,
+.right .mask2 {
+	right: -50%;	/* 枠の右に置いて表示させない */
+}
+
+.left:hover .mask2,
+.center:hover .mask2,
+.right:hover .mask2 {
+	right: 0px;	/* 右にずらして表示する */
 }
 
 .viewmore {
@@ -158,35 +234,41 @@ footer {
     margin-top: 50px;
 }
 
-@media (max-width:600px) {
+@media (max-width:480px) {
     /* スマホ用 */
-    
-        h1 {
-            font-size: 40px;
-        }
-    
-            .h-btn {
-            top: 20px;
-            right: 20px;
-        }
 
-        .content-top ul,
-        .content-bottom ul {
-            display: block;
-        }
-    
-        .content-top img,
-        .content-bottom img {
-            width: 100%;
-        }
-    
-        .sns-link {
-            text-align: center;
-            margin: 50px;
-        }
-    
-        .link-mail ,
-        .link-github {
-            margin-right: 50px;
-        }
+    h1 {
+        font-size: 30px;
+        margin-top: 70px;
     }
+
+    .h-btn {
+        top: 20px;
+        right: 20px;
+    }
+
+    .introduction {
+        font-size: 14px;
+        margin: 50px;
+    }
+
+    .content-top,
+    .content-bottom {
+        display: block;
+    }
+
+    .content-top img,
+    .content-bottom img {
+        width: 100%;
+    }
+
+    .sns-link {
+        text-align: center;
+        margin: 50px;
+    }
+
+    .link-mail ,
+    .link-github {
+        margin-right: 50px;
+    }
+}
