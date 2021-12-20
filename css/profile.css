@@ -7,8 +7,10 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    margin-top: 100px;
+    margin: 100px auto 0;
+    max-width: 70%;
 }
+
 .my-name {
     font-size: 16px;
     text-align: left;
@@ -29,7 +31,7 @@
 .skill {
     position: relative;
     height: 500px;
-    width: 80%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -72,14 +74,18 @@
 }
 
 .strengths-detail,
-.reasons {
+.mind ol {
     margin: 70px 20% 0;
 }
 
+
 .greeting {
-    font-size: 24px;
     text-align: center;
     margin-top: 50px;
+}
+
+.copyright {
+    margin-bottom: 0;
 }
 
 @media (max-width: 600px) {
