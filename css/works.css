@@ -1,1 +1,29 @@
 @charset "UTF=8";
+
+.title {
+    color: #404040;
+    margin: 200px auto;
+    text-align: center;
+}
+
+.works-nav li,
+.works-nav li a {
+    color: #404040;
+    text-align: right;
+}
+
+.text {
+    margin: 100px auto;
+}
+.text h2 {
+    margin: 100px auto 70px;
+}
+
+.outline {
+    padding: 0 300px;
+}
+
+.tools {
+    text-align: center;
+}
+
