@@ -1,29 +1,214 @@
 @charset "UTF=8";
-
-.title {
+.works-title {
+    letter-spacing: 0.3em;
+    text-align: center;
     color: #404040;
-    margin: 200px auto;
+    margin: 200px auto 100px;
+}
+
+.main-visual {
     text-align: center;
 }
 
-.works-nav li,
-.works-nav li a {
-    color: #404040;
-    text-align: right;
+.main-visual img {
+    max-width: 100%;
+    height: auto;
 }
 
 .text {
+    width: 65%;
     margin: 100px auto;
 }
+
 .text h2 {
-    margin: 100px auto 70px;
+    text-align: left;
+    font-size: 1em;
+    margin: 50px 0 10px;
+    letter-spacing: 0.2em;
 }
 
-.outline {
-    padding: 0 300px;
+.text a {
+    letter-spacing: 0.2em;
+    text-decoration: underline;
 }
 
-.tools {
+/* 詳細説明テーブル */
+
+.detail-box {
+    width: 65%;
+    margin: 100px auto;
+    border: 5px solid #CBCBCB;
+    padding: 50px 50px 70px;
+    border-radius: 70px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    color: #404040;
+}
+
+table tr {
+    padding: .35em;
+    border-bottom: 0.3px solid #CBCBCB;
+}
+
+table tr:last-child{
+    border-bottom: 1px solid #CBCBCB;
+}
+
+table th {
+    font-size: 1em;
+    padding: 40px 20px 15px 50px;;
+    text-align: left;
+}
+
+table td {
+    padding: 30px 5px 1em 1em;
+}
+
+tbody th {
+    color: #004398;
+}
+
+.txt{
+    text-align: left;
+    font-size: 1em;
+}
+
+/* リンクボタン */
+.link-btn,
+.link-top {
     text-align: center;
 }
 
+.link-btn a {
+    border: 1px solid #00295d;
+    padding: 20px 100px;
+    border-radius: 50px;
+    background-color: #00295d;
+    color: #fff;
+    margin: 0 50px;
+}
+
+.link-top {
+    margin: 100px;
+}
+
+.link-top a {
+    border: 1px solid #00295d;
+    padding: 20px 100px;
+    border-radius: 50px;
+    color: #00295d;
+}
+
+
+@media(max-width: 960px){
+    .main-visual {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .text {
+        width: 90%;
+        margin: 100px auto;
+    }
+
+    .detail-box {
+        width: 90%;
+        margin: 100px auto;
+        border: 5px solid #CBCBCB;
+        padding: 50px 10px 70px;
+        border-radius: 70px;
+    }
+
+    table th {
+        font-size: 1em;
+        padding: 40px 20px 15px 10px;
+        text-align: left;
+    }
+
+    .link-btn a {
+        border: 1px solid #00295d;
+        padding: 20px 90px;
+        border-radius: 50px;
+        background-color: #00295d;
+        color: #fff;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        width: 300px;
+    }
+
+    .link-top {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    
+
+    .link-top a {
+        border: 1px solid #00295d;
+        padding: 20px 90px;
+        border-radius: 50px;
+        color: #00295d;
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 600px) {
+    .main-visual {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .text {
+        width: 90%;
+        margin: 100px auto;
+    }
+
+    .detail-box {
+        width: 90%;
+        margin: 100px auto;
+        border: 5px solid #CBCBCB;
+        padding: 50px 10px 70px;
+        border-radius: 70px;
+    }
+
+    table th {
+        font-size: 1em;
+        padding: 40px 20px 15px 10px;
+        text-align: left;
+    }
+
+    .link-btn a {
+        border: 1px solid #00295d;
+        padding: 20px 90px;
+        border-radius: 50px;
+        background-color: #00295d;
+        color: #fff;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        width: 300px;
+    }
+
+    .link-top {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    
+
+    .link-top a {
+        border: 1px solid #00295d;
+        padding: 20px 90px;
+        border-radius: 50px;
+        color: #00295d;
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+    }
+}

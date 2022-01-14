@@ -2,7 +2,7 @@
 
 /* 共通部分 */
 body {
-    font-family: "游ゴシック", "Yu Gothic" "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+    font-family: Yu Gothic,ヒラギノ角ゴ Pro, Hiragino Kaku Gothic Pro, Meiryo, sans-serif;
     line-height: 1.7;
     color: #404040;
     background-color: #fff;
@@ -32,7 +32,7 @@ img {
     overflow: hidden;
 }
 
-/* header */
+/* Header */
 
 .top-bg {
     background-image: url(../images/main-visual.jpg);
@@ -54,9 +54,13 @@ img {
     bottom: 0;
     left: 0;
     width: 80%;
-    max-width: 960px;
     padding-top: 40px;
     margin: 0 auto;
+}
+
+.navigation {
+    max-width: 1000px;
+    width: 94%;
 }
 
 .header-text ul {
@@ -83,7 +87,7 @@ li a:active {
     color: #fff;
 }
 
-h1 {
+.site-title {
     padding-top: 14%;
     padding-left: 20px;
     font-size: 3em;
@@ -92,11 +96,58 @@ h1 {
     position: absolute;
 }
 
+.btn-trigger {
+    position: absolute;
+    right: 20px;
+    width: 34px;
+    height: 28px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.btn-trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+.btn-trigger, .btn-trigger span {
+    display: inline-block;
+    transition: all .5s;
+    box-sizing: border-box;
+}
+.btn-trigger span:nth-of-type(1) {
+    top: 0;
+}
+.btn-trigger span:nth-of-type(2) {
+    top: 12px;
+}
+.btn-trigger span:nth-of-type(3) {
+    bottom: 0;
+}
+#btn.active span:nth-of-type(1) {
+    transform: translateY(12px) rotate(-45deg);
+}
+#btn.active span:nth-of-type(2) {
+    left: 50%;
+    opacity: 0;
+    animation: active-btn-bar02 .8s forwards;
+}
+@keyframes active-btn-bar02 {
+    100% {
+        height: 0;
+    }
+}
+#btn.active span:nth-of-type(3) {
+    transform: translateY(-12px) rotate(45deg);
+}
+
 
 /* About */
 #about {
     background-color: #ffb8aa;
-    padding: 6.25em;
+    padding: 100px;
 }
 
 .white-box {
@@ -129,17 +180,23 @@ h2 {
     margin:  50px 0;
 }
 
+/* Works */
+
 #works {
     background-color: #fff;
-    padding: 50px 150px 100px;
 }
 
-.item {
+#works ul {
     display: flex;
-    gap: 50px;
+    list-style: none;
+    justify-content: center;
 }
 
-.item img {
+#works li {
+    margin: 0 20px 80px;
+}
+
+#works img {
     width: 300px;
     height: 300px;
 }
@@ -148,9 +205,10 @@ h2 {
     color: #404040;
     text-align: center;
     text-decoration: none;
+    margin: 10px;
 }
 
-
+/* Skill */
 
 #skill {
     background-color: #00295d;
@@ -173,6 +231,7 @@ h2 {
     padding: 20px 30px 0 20px;
 }
 
+/* Contact */
 
 #contact {
     padding: 10px 10% 50px;
@@ -191,6 +250,8 @@ h2 {
     margin: 0 50px;
 }
 
+/* Footer */
+
 footer {
     background-image: url(../images/footer.jpg);
     min-height: 20vh;
@@ -206,10 +267,101 @@ footer {
     background-position: center;
 }
 
-@media( max-width: 960px) {
-    
+@media(max-width: 960px) {
+    .site-title {
+        font-size: 2.5rem;
+    }
+
+    #about {
+        padding: 100px 70px;
+    }
+
+    #works ul {
+        display: block;
+        text-align: center;
+    }
+
+    #skill ul {
+        display: block;
+        margin: 0;
+    }
+
+    #skill li {
+        width: 100%;
+        margin-bottom: 80px;
+    }
 }
 
-@media( max-width: 520px) {
+@media(max-width: 600px) {
+
+    .site-title {
+        font-size: 1em;
+        margin: 0 auto;
+    }
+
+    .header-text {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 20px 0;
+        margin: 0 auto;
+    }
+
+    .navigation {
+        /* max-width: 960px;
+        width: 100%;
+        font-size: 0.7em;
+        letter-spacing: 0.3em;
+        display: flex; */
+        display: none;
+    }
+
+    /* .header-text ul {
+        list-style: none;
+        letter-spacing: 0.5em;
+        font-weight: bold;
+        gap: 20px;
+        display: flex;
+    } */
     
+    
+
+    #about {
+        padding: 100px 30px;
+    }
+
+    h2 {
+        margin: 20px auto 50px;
+    }
+
+    .white-box {
+        padding: 50px 20px;
+    }
+
+    .info {
+        padding: 0;
+    }
+
+    .my-info p{
+        margin-bottom: 100px;
+    }
+
+    #works {
+        padding: 50px 30px;
+    }
+
+    #skill {
+        padding: 50px 30px;
+    }
+
+    #contact {
+        padding: 50px 30px;
+    }
+
+    .links img {
+        margin: 10px;
+    }
 }

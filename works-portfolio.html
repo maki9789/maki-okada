@@ -15,46 +15,71 @@
     </head>
 
     <body>
-        <!-- header -->
-        <header class="works-header">
-            <!-- <nav>
-                <ul class="works-nav">
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="#works">Works</a></li>
-                    <li><a href="#skill">Skill</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav> -->
-            <h1 class="title">MY PORTFOLIO SITE</h1>
-        </header>
+        <div class="wrap">
+            <!-- header -->
+            <header>    
+                <h1 class="works-title">MY PORTFOLIO SITE</h1>
+            </header>
 
-        <!-- content -->
-        <div class="main-visual">
-            <div><img src="images/works-portfolio1.jpg"></div>
-            <div><img src="images/works-portfolio2.jpg"></div>
-            <div><img src="images/works-portfolio3.jpg"></div>
-        </div>
-        <div class="text">
-            <h2>デザインのポイント</h2>
-            <p class="outline">
-                コントラストをはっきりさせて、見やすくわかりやすいサイトを意識して制作しました。<br>
-                余白や配置も工夫してシンプル・ミニマルだけどモダンで洗練されているサイトを意識しています。<br>
-                文字色を黒にすると印象がはっきりしすぎてしまうのでグレーにしています。<br>
-                また、制作物を見ていただきたいのでトップページに制作物の一覧を配置しました。<br>
-            </p>
-            <h2>使用ツール</h2>
-            <p class="tools">
-                Adobe Photoshop<br>
-                Adobe Illustrator<br>
-                HTML CSS<br>
-                jQuery  
-            </p>
+            <!-- content -->
+            <div class="main-visual">
+                <img src="images/portfolio-mysite-mockup.png" alt="ポートフォリオサイトのモックアップ">
+            </div>
+            <div class="text">
+                <h2>サイトリンク</h2>
+                <a href="http://maki9789.html.xdomain.jp/index.html">こちらをクリック</a>
+                <h2>このサイトの目的</h2>
+                <p>私のことを知ってもらうこと！！</p>
+                <h2>コンセプト・デザインのポイント</h2>
+                <p>
+                    ゲームが好きなので、ゲームのような世界観を表現しました。<br>
+                    １ページで大体の情報が伝わるようにしました。<br>
+                    転職活動のため、私のかんたんなプロフィール、スキルを掲載しています。
+                </p>
+                <h2>コメント</h2>
+                <p>
+                    私自身を知ってもらうためのポートフォリオサイトです。<br>
+                    初めてレスポンシブまでコーディングしました。<br>
+                    特にテーブルの実装に時間がかかりました。
+                </p>
+            </div>
+            <div class="detail-box">
+                <table>
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <th>担当</th>
+                            <td data-label="内容" class="txt">企画・デザイン・コーディング</td>
+                        </tr>
+                        <tr>
+                            <th>制作時間</th>
+                            <td data-label="内容" class="txt">７日</td>
+                        </tr>
+                        <tr>
+                            <th>デザインツール</th>
+                            <td data-label="内容" class="txt">Adobe Photoshop、Adobe XD</td>
+                        </tr>
+                        <tr>
+                            <th>実装</th>
+                            <td data-label="内容" class="txt">HTML、CSS、jQuery</td>
+                        </tr>
+                    </tbody>
+                </table>   
+            </div>
+            <div class="link-btn">
+                <a href="works-collection.html">前のページへ</a>
+                <a href="works-narcissus.html">次のページへ</a>
+            </div>
+            <div class="link-top">
+                <a href="index.html">トップページへ</a>
+            </div>
+
+            <!-- footer -->
+            <footer>
+                    <p>&copy; Maki Okada.</p>
+            </footer>
         </div>
 
-        <!-- footer -->
-        <footer>
-                <p>&copy; Maki Okada.</p>
-        </footer>
         <!-- JS -->
         <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" src="js/slick.min.js"></script>
